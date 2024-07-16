@@ -21,8 +21,9 @@ void printTree(struct node* root, int space) {
         return;
     space += 5;
     printTree(root->right, space);
-    for (int i = 5; i < space; i++)
+    for (int i = 5; i < space; i++){
         printf(" ");
+    }
     printf("%d\n", root->data);
     printTree(root->left, space);
 }
